@@ -7,12 +7,6 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repo') {
-            steps {
-                git branch: 'main', url: 'https://github.com/AlenGeorge12/vlab_7_RA2211003010235'
-            }
-        }
-
         stage('Build & Push Docker Image') {
             steps {
                 script {
